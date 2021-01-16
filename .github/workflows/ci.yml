@@ -14,3 +14,4 @@ jobs:
           percy-flags: "--widths=320,1280"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
