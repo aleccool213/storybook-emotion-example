@@ -56,8 +56,12 @@ export const Description = styled.div`
 
 export const Excerpt = styled.div`
   margin: 0;
-  width: 500px;
+  width: 250px;
+  max-height: 75px;
+
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 `;
